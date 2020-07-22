@@ -27,7 +27,7 @@ async function requestApi(url) {
     let data = await delay(2000, url, isExpired);
     return data;
   } catch (error) {
-    // console.log({ error });
+    console.log("token exPired");
 
     let newToken;
     requestRefreshToken = requestRefreshToken
